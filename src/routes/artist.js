@@ -7,6 +7,10 @@ router.post('/', artistController.createArtist);
 
 router.get('/', artistController.getAllArtists);
 
-router.get('/:id', artistController.getArtistById)
+router.get('/:id', artistController.getArtistById);
+
+router.put('/:id', artistController.putArtist);
+
+router.patch('/:id', artistController.updateArtist);
 
 module.exports = router;
